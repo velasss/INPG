@@ -1,0 +1,237 @@
+@media(min-width:321px) {
+  .selector {
+  }
+}
+@media(max-width: 400px) {
+  body {
+      background-color: aquamarine;
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(15, 145, 134);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.row {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 175px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left {
+  width: 40%;
+}
+.right {
+  width: 60%;
+  font-size: 14px;
+  text-align: left;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear:both;
+} 
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    
+  }
+}
+
+  
+
+  .articles {
+    background-color: lightblue;
+    padding: 10px;
+    padding-left: 20px;
+
+    margin: 10px;
+}
+.title_article{
+    font: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    float: right;
+    margin-right: 500px;
+}
+.title2_article {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    float: right;
+    margin-right: 500px;
+    margin-top: 10px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {background-color:lightseagreen;} /* Green */
+  .button2 {background-color: #008CBA;} /* Blue */
+
+  .resume {
+    border-color: #4CAF50;
+    color: green;
+    border: 2px solid rgb(28, 161, 39);
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .block:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .navbot {
+    font-size: 10px;
+    
+    
+      }
+   
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.tutorials {
+  
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
