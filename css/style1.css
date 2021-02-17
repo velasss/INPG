@@ -200,6 +200,7 @@ input[type=submit] {
   border-radius: 5px;
   background-color: #ffffff;
   padding: 20px;
+  display: none;
 }
 .tutorials {
   
@@ -219,6 +220,10 @@ input[type=submit] {
   float: left;
   width: 75%;
   margin-top: 6px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 4px;
+
 }
 
 /* Clear floats after the columns */

@@ -33,7 +33,9 @@
     }
   }
   </script>
-        
+
+
+   
 
 <div class="row">
   <div class="column" style="background-color: white;">
@@ -41,7 +43,7 @@
   <div class="column middle" style="background-color: white;">
     <h2>Angela</h2>
     <p>Front End Developer</p>
-    <button class="button button1">Edit</button>
+    <button class="button button1" onclick="getElementById('hidden-div').style.display = 'block'">Edit</button>
     <button class="button resume">Resume</button></div>
   <div class="column right" style="background-color:white;"> 
      <table>
@@ -71,8 +73,8 @@
 
    <br>
           
-          <div class="container">
-            <form action="action_page.php">
+          <div class="container" id="hidden-div" >
+            <form action="js/action.php" id="frm1" method="post">
             <div class="row">
             <div class="col-25">
               <label for="fname">Nama</label>
@@ -128,7 +130,8 @@
               <br>  
             
               <div class="row">
-                <input type="submit" value="Submit">
+                <input type="submit" onclick="myFunction()" value="Submit">
+                <script scr="js/script.js"></script>
               </div>
             </form>
           </div>

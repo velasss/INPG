@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <style>
+    .hidden-div {
+        display:none
+    }
+    </style>
+    </head>
+    <body>
+    <div class="reform">
+        <form id="reform" action="action.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="type" value="" />
+            <fieldset>
+                content here...
+            </fieldset>
+
+                <div class="hidden-div" id="hidden-div">
+
+            <fieldset>
+                more content here that is hidden until the button below is clicked...
+            </fieldset>
+        </form>
+                </div>
+<span style="display:block; padding-left:640px; margin-top:10px;">
+<button onclick="getElementById('hidden-div').style.display = 'block'">Check Availability</button>
+</span>
+    </div>
+    </body>
+    </html>
